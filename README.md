@@ -17,23 +17,23 @@ for p in myfile.all_projects:
 		print "\t - %s" % s.notes
 ```
 
-### OfficeTimeFile
-- all_sessions: list of all sessions
-- all_projects: list of all projects
-- path: the path
+### `OfficeTimeFile`
+- `all_sessions`: list of all sessions
+- `all_projects`: list of all projects
+- `path`: the path
 
-### Session
-- uid: unique identifier for this session
-- project: reference to its parent project
-- start_time: time the session started as a datetime
-- end_time: time the session ended as a datetime
-- length: length of the session as a timedelta (not necessarily the difference between start and end)
-- adjustment: the number of seconds the user adjusted the length by
-- notes: the notes the user entered for the session
+### `Session`
+- `uid`: unique identifier for this session
+- `project`: reference to its parent project
+- `start_time`: time the session started as a datetime
+- `end_time`: time the session ended as a datetime
+- `length`: length of the session as a timedelta (not necessarily the difference between start and end)
+- `adjustment`: the number of seconds the user adjusted the length by
+- `notes`: the notes the user entered for the session
 
 ### Project
-- uid: unique identifier for this project
-- name: name for this project
-- client: the client
-- archived: bool, whether it shows in the menu or not
-- sessions: list of `Session` objects associated with this project.
+- `uid`: unique identifier for this project
+- `name`: name for this project
+- `client`: the client
+- `archived`: bool, whether it shows in the menu or not
+- `sessions`: list of `Session` objects associated with this project.
