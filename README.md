@@ -22,7 +22,7 @@ for p in myfile.all_projects:
 - `all_projects`: list of all projects
 - `path`: the path
 
-### `Session`
+### `OfficeTimeFile.Session`
 - `uid`: unique identifier for this session
 - `project`: reference to its parent project
 - `start_time`: time the session started as a datetime
@@ -31,7 +31,7 @@ for p in myfile.all_projects:
 - `adjustment`: the number of seconds the user adjusted the length by
 - `notes`: the notes the user entered for the session
 
-### Project
+### `OfficeTimeFile.Project`
 - `uid`: unique identifier for this project
 - `name`: name for this project
 - `client`: the client
